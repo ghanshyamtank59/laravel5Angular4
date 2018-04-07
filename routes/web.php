@@ -22,6 +22,8 @@ Route::namespace('Api')->group(function () {
 });
 /* *********************** Webservice API Routes - END ************************** */
 
+Route::get('user-list', 'DashboardController@getUserList');
+
 
 Route::get('/{any?}', function () {
     return view('welcome');

@@ -1,3 +1,9 @@
 <p>
   dashboard works!
 </p>
+<ul>
+
+	<li *ngFor="let user of userList let i=index">
+		<b>Username: </b> {{ user.username }}, <b>Mobile No: </b> {{ user.mobile_no }}
+	</li>
+</ul>
